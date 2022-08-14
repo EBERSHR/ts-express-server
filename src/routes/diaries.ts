@@ -10,7 +10,8 @@ router.get('/', (_req, res) => {
 });
 
 router.post('/', (_req, res) => {
-    res.send('Saving a diary');
+    const x = _req.body;
+    res.send('Saving a diary diariamente');
 }  
 );
 
