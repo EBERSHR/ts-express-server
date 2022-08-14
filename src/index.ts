@@ -1,6 +1,7 @@
 import express from 'express';
 
 import diaryRouter from './routes/diaries';
+import userRouter from './routes/users';
 
 const app = express();
 
@@ -15,6 +16,8 @@ app.get('/ping', ( _req, res ) => {
 });
 
 app.use('/api/diaries', diaryRouter);
+app.use('/api/users', userRouter);
+app.use('/api/users/:id', userRouter);
 
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT} typescript`);
