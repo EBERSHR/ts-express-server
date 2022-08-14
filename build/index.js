@@ -12,6 +12,6 @@ app.get('/ping', (_req, res) => {
     console.log('someone pinged here');
     res.send('pong');
 });
-app.listen(PORT, () => {
+app.listen(PORT, () => {z
     console.log(`server is running on port ${PORT}`);
 });
